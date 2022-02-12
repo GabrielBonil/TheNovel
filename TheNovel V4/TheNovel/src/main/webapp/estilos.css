@@ -1,0 +1,63 @@
+@charset "Utf-8";
+
+h1 {
+    color: black;
+    text-align: justify;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family:  Arial;
+    font-size: 18px;
+}
+
+nav#menu ul{
+    list-style: square;
+    text-transform: uppercase;
+}
+
+nav#menu li{
+    display: inline-block;
+    padding: 10px 10px 10px 0px;
+    transition: background-color 1.5s;
+}
+
+nav#menu li.hover{
+    background-color: #FFFFFF;
+}
+
+nav#menu a{
+    color: #000000;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.area_0{grid-area: logomarca;}
+
+.area_1{grid-area: barramenu;}
+
+.area_2{grid-area: novels;}
+
+.area_3{grid-area: ultimos;}
+
+.area_4{grid-area: contato;}
+
+.grid-container{
+	display: grid;
+	grid-template-areas:
+
+	'logomarca logomarca logomarca logomarca logomarca'
+	'barramenu barramenu barramenu barramenu barramenu'
+	'novels novels novels novels novels'
+	'ultimos ultimos ultimos ultimos ultimos'
+	'contato contato contato contato contato';
+
+	grid-gap: 5px;
+	background-color: silver;
+	padding: 0px;
+}
+
